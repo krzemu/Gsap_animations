@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+
+    <!-- 
+    <script>
+        tailwind.config = {
+
+        }
+    </script> -->
+</head>
+
+<body
+    class="bg-gradient-to-bl from-slate-900 text-white via-slate-800 to-slate-900 bg-fixed font-light overflow-x-hidden">
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <main data-scroll-container>
+
+        <section class="w-full min-h-screen flex justify-center items-center gap-4" data-scroll-section>
+            <div id="box" class="w-64 h-64 bg-slate-200" data-scroll></div>
+        </section>
+        <section class="w-full min-h-screen flex justify-center items-center gap-4 " data-scroll-section>
+            <div id="board"
+                class="w-64 h-64 grid grid-cols-2 grid-rows-2 place-items-stretch rounded-3xl bg-slate-500/20 shadow-2xl gap-6 p-6 overflow-hidden"
+                data-scroll>
+                <div class="bg-slate-50 rounded-full shadow-xl"></div>
+                <div class="bg-slate-50 rounded-full shadow-xl"></div>
+                <div class="bg-slate-50 rounded-full shadow-xl"></div>
+                <div class="bg-slate-50 rounded-full shadow-xl"></div>
+            </div>
+        </section>
+        <section class="barWrapper w-full min-h-screen flex flex-col justify-center items-center select-none section3"
+            data-scroll-section>
+            <h2 class="heading-acc text-3xl font-light" data-scroll>Lorem ipsum is simply dummy text</h2>
+            <div class="w-4/5 h-96 grid grid-cols-3 place-items-stretch items-end gap-8 px-4" data-scroll>
+                <div class="bar bg-red-500/60 flex items-end justify-center text-white relative" data-scroll>
+                    <div class="title absolute -bottom-7" data-scroll>Bar 1</div>
+                </div>
+                <div class="bar bg-violet-400/60 flex items-end justify-center text-white relative" data-scroll>
+                    <div class="title absolute -bottom-7" data-scroll>Bar 2</div>
+                </div>
+                <div class="bar bg-orange-500/60 flex items-end justify-center text-white relative" data-scroll>
+                    <div class="title absolute -bottom-7" data-scroll>Bar 3</div>
+                </div>
+            </div>
+            <div class="bar__divider w-4/5 h-[1px] bg-slate-200/60"></div>
+        </section>
+        <section class="min-h-screen flex flex-col items-center justify-start  relative" data-scroll-section>
+            <div class="w-full h-8 flex justify-start items-end fixed bottom-0" data-scroll>
+                <div class="loaderBar w-0 bg-gradient-to-l from-indigo-600/80 to-indigo-700/80" data-scroll></div>
+            </div>
+            <div class="longContent mt-16 w-4/5 max-w-7xl" data-scroll data-scroll-id="longContent">
+                <span class="text-content-block" data-scroll>
+                    <h3 class="text-3xl font-light mb-4 mt-8">Where does it come from?</h3>
+                    <p class="leading-7 text-justify">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It
+                        has roots in
+                        a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                        Latin
+                        professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                        consectetur, from a Lorem Ipsum passage, and going through
+                    </p>
+
+                </span>
+                <span class="text-content-block" data-scroll>
+                    <h3 class="text-3xl font-light mb-4 mt-16 text-right">Where does it come from?</h3>
+                    <p class="leading-7 text-justify">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It has roots in
+                        a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                        Latin
+                        professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                        consectetur, from a Lorem Ipsum passage, and going through
+                    </p>
+                </span>
+
+                <span class="text-content-block" data-scroll>
+                    <h3 class="text-3xl font-light mb-4 mt-16 text-left">Where does it come from?</h3>
+                    <p class="leading-7 text-justify">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It
+                        has roots in
+                        a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                        Latin
+                        professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                        consectetur, from a Lorem Ipsum passage, and going through
+                    </p>
+                </span>
+                <span class="text-content-block" data-scroll>
+                    <h3 class="text-3xl font-light mb-4 mt-16 text-right">Where does it come from?</h3>
+                    <p class="leading-7 text-justify">
+                        Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It
+                        has roots in
+                        a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                        Latin
+                        professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
+                        consectetur, from a Lorem Ipsum passage, and going through
+                    </p>
+                </span>
+            </div>
+        </section>
+        <section
+            class="stop-scroll-section min-h-screen flex flex-col justify-center items-center relative overflow-hidden"
+            data-scroll-section="">
+            <div id="fancy-heading-anim" class="w-4/5 flex flex-col gap-8 justify-center items-center" data-scroll>
+                <h2 class="text-4xl text-center font-light text-center" data-scroll>Lorem ipsum is simply dummy text
+                </h2>
+                <p class="text-xl text-center" data-scroll>It is a long established fact that a reader will be
+                    distracted by the readable content
+                </p>
+            </div>
+        </section>
+
+        <section class="horizontalWrapper min-h-screen w-[300%] flex flex-nowrap">
+            <div class="panel first w-full h-screen flex justify-center items-center text-3xl">
+                <h3>First container</h3>
+            </div>
+            <div class="panel second w-full h-screen flex justify-center items-center text-3xl bg-indigo-700/20">
+                <h3>Second container</h3>
+            </div>
+            <div class="panel third w-full h-screen flex justify-center items-center text-3xl bg-violet-600/40">
+                <h3>Third container</h3>
+            </div>
+        </section>
+
+        <section class="footer min-h-screen flex justify-center items-center">
+            <h2 class="text-7xl">The end.</h2>
+        </section>
+    </main>
+
+
+    <script>
+        const scroll = new LocomotiveScroll({
+            el: document.querySelector('[data-scroll-container]'),
+            // smooth: true,
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Assets/SplitText.js"></script>
+
+    <script src="app.js"></script>
+    <script>
+        window.scrollTo(0, 3000);
+    </script>
+
+
+</body>
+
+</html>
